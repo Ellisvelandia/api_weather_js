@@ -39,10 +39,9 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(135deg, #cff5f7 10%, rgb(253, 253, 255) 100%);
+  background: linear-gradient(135deg, #a9ccf5 10%, rgb(250, 252, 255) 100%);
   background-repeat: no-repeat;
   background-size: 100%;
-  animation: animate 10s linear;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -149,15 +148,6 @@ main:hover {
   }
   100% {
     transform: translateX(100%);
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
   }
 }
 
