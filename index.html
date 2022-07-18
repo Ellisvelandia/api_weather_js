@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OpenWeatherMap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cloud">
+      <img src="./images/cloud1.png" alt="" style="--i: 1" />
+      <img src="./images/cloud2.png" alt="" style="--i: 2" />
+      <img src="./images/cloud3.png" alt="" style="--i: 3" />
+      <img src="./images/cloud4.png" alt="" style="--i: 4" />
+      <img src="./images/cloud5.png" alt="" style="--i: 5" />
+    </div>
+
+    <div class="Title">
+      <h1>OpenWeatherMap</h1>
+    </div>
+
+    <div class="app-wrap">
+      <p>Enter any city name in the input box below to get the data</p>
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city"
+        />
+      </header>
+
+      <main>
+        <section class="location">
+          <div class="city">Carmen de Apicala, colombia</div>
+          <div class="date">18/07/2022</div>
+        </section>
+
+        <div class="current">
+          <div class="temp">35<span>°C</span></div>
+          <div class="weather">Sunny</div>
+          <div class="hi-low">31°C / 36°C</div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
