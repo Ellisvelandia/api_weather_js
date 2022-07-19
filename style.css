@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap");
 
 * {
   margin: 0;
@@ -6,10 +6,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Special Elite", cursive;
+  font-family: "Roboto", sans-serif;
   background-size: cover;
   background-position: top center;
-  background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
   overflow: hidden;
 }
 .app-wrap {
@@ -24,36 +23,6 @@ body {
   z-index: 1;
 }
 
-.Title {
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-  font-weight: 900;
-}
-h1 {
-  font-size: 4rem;
-  color: #fff;
-  position: relative;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #a9ccf5 10%, rgb(250, 252, 255) 100%);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-p {
-  padding-top: 10px;
-  font-size: 2rem;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 100%;
-  color: #fff;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -62,7 +31,7 @@ header {
 }
 
 header input {
-  margin-top: -35px;
+  margin-top: 45px;
   width: 100%;
   max-width: 330px;
   padding: 10px 15px;
@@ -70,31 +39,32 @@ header input {
   outline: none;
   background-color: rgba(18, 18, 18, 0.4);
   border-radius: 16px;
-  border-bottom: 3px solid #1a6ad3;
+  border-bottom: 3px solid #8bb7f0;
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
   color: #eeeeee;
-  z-index: 1;
+  z-index: 2;
 }
 header input:focus {
   background-color: rgba(18, 18, 18, 0.8);
 }
 main {
-  height: 60vh;
+  height: 55vh;
   margin: 0 auto;
   text-align: center;
   width: 500px;
   border: 1px solid transparent;
-  padding: 55px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  z-index: 1;
+  z-index: 2;
 }
 
 main:hover {
-  background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  background-image: linear-gradient(360deg, #00a2ff 10%, #135175 100%);
+  opacity: 0.8;
 }
 .location .city {
   color: #eeeeee;
@@ -116,11 +86,11 @@ main:hover {
 .current .temp span {
   font-weight: 200;
 }
+
 .current .weather {
   color: #eeeeee;
   font-size: 32px;
   font-weight: 700;
-  font-style: italic;
   margin-bottom: 15px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.4);
 }
@@ -133,7 +103,7 @@ main:hover {
 
 .cloud {
   overflow: hidden;
-  z-index: -1;
+  z-index: 2;
 }
 .cloud img {
   animation: cld calc(8s * var(--i)) linear infinite;
@@ -142,6 +112,7 @@ main:hover {
   position: absolute;
   bottom: 0px;
 }
+
 @keyframes cld {
   0% {
     transform: translateX(-100%);
@@ -158,7 +129,7 @@ main:hover {
     text-align: center;
     width: 400px;
     border: 1px solid transparent;
-    padding: 55px;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -168,5 +139,12 @@ main:hover {
     font-size: 2.5rem;
     color: #fff;
     background-size: 100%;
+  }
+  .current .img img {
+    margin-top: -65px;
+    width: 90px;
+  }
+  .current .weather {
+    margin-top: -25px;
   }
 }

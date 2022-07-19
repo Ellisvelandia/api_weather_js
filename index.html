@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>OpenWeatherMap</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Title.css" />
+    <title>WeatherMap</title>
   </head>
   <body>
-    <div class="cloud">
-      <img src="./images/cloud1.png" alt="" style="--i: 1" />
-      <img src="./images/cloud2.png" alt="" style="--i: 2" />
-      <img src="./images/cloud3.png" alt="" style="--i: 3" />
-      <img src="./images/cloud4.png" alt="" style="--i: 4" />
-      <img src="./images/cloud5.png" alt="" style="--i: 5" />
-    </div>
-
-    <div class="Title">
-      <h1>OpenWeatherMap</h1>
-    </div>
-
     <div class="app-wrap">
-      <p>Enter any city name in the input box below to get the data</p>
+      <div class="cloud">
+        <img src="./images/cloud1.png" alt="" style="--i: 1" />
+        <img src="./images/cloud2.png" alt="" style="--i: 2" />
+        <img src="./images/cloud3.png" alt="" style="--i: 3" />
+        <img src="./images/cloud4.png" alt="" style="--i: 4" />
+        <img src="./images/cloud5.png" alt="" style="--i: 5" />
+      </div>
+      <div class="main">
+        <div class="bg"></div>
+        <div class="text">WeatherMap</div>
+      </div>
       <header>
         <input
           type="text"
@@ -44,6 +43,8 @@
         </div>
       </main>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
